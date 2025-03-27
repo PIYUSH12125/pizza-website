@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pizza Pie</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style_pizza.css">
+</head>
+<body>
+    <header>
+        <a href="pizza.html" class="logo-checkout">Pizza Pie</a>
+    </header>
+    <section id="checkout-page"></section>
+
+    <!-- Display total price -->
+    <div id="total-price"></div>
+
+    <!-- Buttons for cart management and proceeding to payment -->
+    <div>
+    <a href="#" class="btn1" id="reset-cart">Reset Cart</a>
+    <a href="#" class="btn1" id="proceed-payment">Proceed to Payment</a>
+    <div class="payment">
+        <h1 class="payTitle">Personal Information</h1>
+        <label>Name and Surname</label>
+        <input type="text" placeholder="John Doe" class="payInput">
+        <label>Phone Number</label>
+        <input type="text" placeholder="+91 234 5678" class="payInput">
+        <label>Address</label>
+        <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+        <h1 class="payTitle">Card Information</h1>
+        <div class="cardIcons">
+            <img src="visa.png" width="40" alt="" class="cardIcon">
+            <img src="master.png" alt="" width="40" class="cardIcon">
+        </div>
+        <input type="password" class="payInput" placeholder="Card Number">
+        <div class="cardInfo">
+            <input type="number" min="01" max="12" placeholder="mm" class="payInput sm">
+            <input type="number" placeholder="yyyy" min="2024" max="2060" class="payInput sm">
+            <input type="number" placeholder="cvv" class="payInput sm">
+        </div>
+        <button class="payButton"><b>Checkout!</button>
+        <span class="close">X</span>
+    </div>
+    </div>
+
+    <!-- Script to manage cart functionality -->
+    <script src="checkout_script.js"></script>
+</body>
+</html>
